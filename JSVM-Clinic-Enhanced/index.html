@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JVSM Ortho Clinic |  Dr. Muruguvalavan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="navbar">
+        <a href="#home" class="logo">
+            <img src="jsvm logo.png" alt="JVSM Ortho Logo" class="logo-img-header">
+            <span>JVSM <span class="logo-tag">Ortho Clinic</span></span>
+        </a>
+        <nav class="nav-links">
+            <a href="#home" class="nav-item active">Home</a>
+            <a href="#about" class="nav-item">Doctor</a>
+            <a href="#services" class="nav-item">Services</a>
+            <a href="#booking" class="nav-item">Book Appointment</a>
+            <a href="#contact" class="nav-item btn-nav">Location & Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="badge">Restoring Mobility • Renewing Life</span>
+            <h1>Expert Care for Bone, Joint & Muscle Health</h1>
+            <p>Comprehensive orthopedic surgical and non-surgical care led by 
+                <p><strong>Dr.V. Murugu Valavan</strong> (Orthopedic Surgeon).</p>
+            <div class="hero-buttons">
+                <a href="#booking" class="btn-primary">
+                    <span>📅</span> Book Appointment
+                </a>
+                <a href="https://wa.me/919443466208" class="btn-whatsapp" target="_blank">
+                    <span>💬</span> WhatsApp Chat
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctor Section -->
+    <section id="about" class="doctor-section">
+        <h2 class="section-title">Lead Specialist</h2>
+        <p class="section-desc">Meet your trusted Orthopedic Specialist</p>
+        <div class="doctor-card">
+            <div class="doctor-avatar">
+                <img src="jsvm logo.png" alt="JVSM Logo" class="logo-img-card">
+            </div>
+            <div class="doctor-info">
+                <h3>Dr.V.Murugu Valavan </h3>
+                <h3>MBBS., D.Ortho., Phd (Sports Medicine)</h3>
+                <p class="designation">Orthopedic Surgeon</p>
+                <p class="doctor-bio">Dedicated to providing specialized surgical and non-surgical care for fractures, joint pain, spine issues, and sports injuries at JVSM Ortho Clinic.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2 class="section-title">Services & Specialties</h2>
+        <p class="section-desc">We offer complete advanced care for all orthopedic and musculoskeletal conditions.</p>
+        
+        <div class="service-grid">
+            <div class="service-card">
+                <div class="service-icon">🦴</div>
+                <h3>Joint & Knee Care</h3>
+                <p>Treatment for knee pain, joint arthritis, stiffness, and degenerative joint conditions.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🚑</div>
+                <h3>Fracture & Trauma</h3>
+                <p>Immediate specialized care for bone fractures, dislocations, and emergency trauma injuries.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🩺</div>
+                <h3>Spine & Back Pain</h3>
+                <p>Evaluation and treatment for back injuries, sciatica, disc issues, and chronic pain.</p>
+            </div>
+            <div class="service-card">
+                <div class="service-icon">🏠</div>
+                <h3>House Visit Consultation</h3>
+                <p>Home orthopedic visits for elderly patients, non-ambulatory individuals, and emergency cases.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Booking Form -->
+    <section id="booking" class="booking-section">
+        <h2 class="section-title">Book an Appointment</h2>
+        <p class="section-desc">Fill out your details to schedule a consultation directly with Dr. Muruguvalavan.</p>
+        
+        <form id="appointmentForm" class="booking-form">
+            <div class="form-group">
+                <label for="patientName">Full Name</label>
+                <input type="text" id="patientName" placeholder="e.g. John Doe" required>
+            </div>
+
+            <!-- AGE & GENDER FIELDS -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="patientAge">Age</label>
+                    <input type="number" id="patientAge" placeholder="e.g. 45" min="1" max="120" required>
+                </div>
+                <div class="form-group">
+                    <label for="patientGender">Gender</label>
+                    <select id="patientGender" required>
+                        <option value="" disabled selected>Select</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="patientPhone">Mobile Number</label>
+                <input type="tel" id="patientPhone" placeholder="e.g. 9876543210" required>
+            </div>
+            <div class="form-group">
+                <label for="appointmentDate">Preferred Consultation Date</label>
+                <input type="date" id="appointmentDate" required>
+            </div>
+            <div class="form-group">
+                <label for="patientProblem">Describe Health Issue / Service</label>
+                <textarea id="patientProblem" placeholder="Briefly describe your issue (e.g., Knee pain, Back pain, House visit request)" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn-submit">
+                📲 Submit via WhatsApp
+            </button>
+        </form>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section id="contact" class="contact">
+        <h2 class="section-title">Visit Our Clinic & Services</h2>
+        <p class="section-desc">Find us at our clinic location or request a doctor home visit.</p>
+        
+        <div class="contact-grid">
+            <div class="contact-box">
+                <div class="contact-header">
+                    <div class="contact-title-group">
+                        <img src="jsvm logo.png" alt="JVSM Logo" class="logo-img-contact">
+                        <div>
+                            <h3 style="color:#074E1A; font-size:1.2rem;">JVSM ORTHO CLINIC</h3>
+                            <p style="font-size:0.85rem; color:#64748B;">Dr. Muruguvalavan | Orthopedic Surgeon</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <span class="info-icon">📍</span>
+                    <div>
+                        <strong class="info-title">Clinic Address:</strong>
+                        <p>No. 1-163, Agaram Main Road, Thiruvancherry, Chennai - 600 126</p>
+                        <a href="https://maps.app.goo.gl/vK7uvbdrDmJZ9uDa8" target="_blank" class="map-link">Open in Google Maps ↗</a>
+                    </div>
+                </div>
+
+                
+
+                <div class="info-item">
+                    <span class="info-icon">⏰</span>
+                    <div>
+                        <strong class="info-title">Consultation Timings:</strong>
+                        <p><strong>Mon - Fri:</strong> 06:00 PM – 09:00 PM<br><strong>Sat, Sunday & Other holidays:</strong> On Call Appointments Only</p>
+                    </div>
+                </div>
+
+                <div class="info-item highlight-box">
+                    <span class="info-icon">🏠</span>
+                    <div>
+                        <strong class="info-title">House Visit Services:</strong>
+                        <p>Doctor home visits available for elderly, bedridden, or severe trauma patients upon prior request.</p>
+                    </div>
+                </div>
+
+                <div class="info-item">
+                    <span class="info-icon">📞</span>
+                    <div>
+                        <strong class="info-title">Contact Number:</strong>
+                        <p><a href="tel:+919443466208" class="phone-link">+91 94434 66208</a></p>
+                    <div>
+                        <span class="info-title">Email Address:</span>
+                        <a href="mailto:muruguvalav@gmail.com" class="phone-link">muruguvalav@gmail.com</a>
+                    </div>
+                    
+                    </div>
+                </div>
+
+                <div class="contact-actions">
+                    <a href="https://maps.app.goo.gl/vK7uvbdrDmJZ9uDa8" target="_blank" class="btn-primary">Get Directions</a>
+                    <a href="https://wa.me/919443466208?text=Hello%20Dr.%20Muruguvalavan,%20I%20would%20like%20to%20request%20a%20House%20Visit." class="btn-whatsapp" target="_blank">Book House Visit</a>
+                </div>
+            </div>
+
+            <div class="map-container">
+                <iframe 
+                    src="https://maps.google.com/maps?q=JVSM%20Ortho%20Clinic%20Thiruvancherry%20Chennai&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 JVSM Ortho Clinic. Restoring Mobility • Renewing Life. All rights reserved.</p>
+    </footer>
+
+    <!-- Form Script -->
+    <script>
+        document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('patientName').value;
+            const age = document.getElementById('patientAge').value;
+            const gender = document.getElementById('patientGender').value;
+            const phone = document.getElementById('patientPhone').value;
+            const date = document.getElementById('appointmentDate').value;
+            const problem = document.getElementById('patientProblem').value || 'Not specified';
+            const doctorWhatsApp = '919443466208';
+            
+            const message = `*New Appointment Request*%0A--------------------------------%0A*Patient Name:* ${encodeURIComponent(name)}%0A*Age / Gender:* ${encodeURIComponent(age)} yrs, ${encodeURIComponent(gender)}%0A*Phone:* ${encodeURIComponent(phone)}%0A*Requested Date:* ${encodeURIComponent(date)}%0A*Issue / Request:* ${encodeURIComponent(problem)}`;
+            
+            window.open(`https://wa.me/${doctorWhatsApp}?text=${message}`, '_blank');
+        });
+    </script>
+</body>
+</html>
